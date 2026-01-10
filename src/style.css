@@ -1,0 +1,39 @@
+/* src/index.css */
+@import "tailwindcss";
+
+@theme {
+  --font-mono:
+    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
+/* Your custom global styles */
+body {
+  font-family: "JetBrains Mono", monospace;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-left: 2px solid #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-corner {
+  background: #000000;
+}
