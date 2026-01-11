@@ -69,7 +69,9 @@ const App = () => {
         {/* Brand */}
         <div class="flex-none flex items-center px-4 py-3 border-b-2 lg:border-b-0 lg:border-r-2 border-black min-w-[200px] bg-black text-white">
           <h1 class="text-lg font-bold tracking-tighter uppercase">
-            CLANG-FORMAT EXPLORER
+            <a href="https://github.com/scarf005/clang-format-explorer">
+              CLANG-FORMAT EXPLORER
+            </a>
           </h1>
         </div>
 
@@ -105,6 +107,7 @@ const App = () => {
               </span>
             </div>
             <select
+              id="template"
               value={selectedTemplate.value}
               onChange={(e) => {
                 const name = e.currentTarget.value
