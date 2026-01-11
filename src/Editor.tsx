@@ -11,7 +11,7 @@ export const InputEditor = forwardRef<HTMLTextAreaElement, InputEditorProps>(
     return (
       <textarea
         ref={ref}
-        className="w-full h-full p-4 resize-none focus:outline-none focus:ring-0 text-sm leading-relaxed font-mono bg-white text-black rounded-none border-0"
+        class="w-full h-full p-4 resize-none focus:outline-none focus:ring-0 text-sm leading-relaxed font-mono bg-white text-black rounded-none border-0"
         value={value}
         onChange={(e) => onChange(e.currentTarget.value)}
         onScroll={onScroll}
@@ -36,16 +36,16 @@ export const OutputDisplay = forwardRef<HTMLDivElement, OutputDisplayProps>(
       <div
         ref={ref}
         onScroll={onScroll}
-        className="relative w-full h-full overflow-auto bg-gray-50"
+        class="relative w-full h-full overflow-auto bg-gray-50"
       >
         {loading && (
-          <div className="absolute inset-0 flex items-center justify-center bg-white/80 z-10">
-            <span className="text-black font-bold animate-pulse">
+          <div class="absolute inset-0 flex items-center justify-center bg-white/80 z-10">
+            <span class="text-black font-bold animate-pulse">
               FORMATTING...
             </span>
           </div>
         )}
-        <pre className="p-4 text-sm leading-relaxed font-mono whitespace-pre text-black">
+        <pre class="p-4 text-sm leading-relaxed font-mono whitespace-pre text-black">
         {value}
         </pre>
       </div>
